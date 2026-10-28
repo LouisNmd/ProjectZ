@@ -1,0 +1,15 @@
+characters = {
+	RZD_rising_dead_leader = {
+		name = RZD_rising_dead_leader
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RZD_rising_dead_leader
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = { }
+		}
+	}
+}

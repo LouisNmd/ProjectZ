@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_RZD_rising_dead_leader"
+		texturefile = "gfx/leaders/RZD/projectz.dds"
+	}
+}

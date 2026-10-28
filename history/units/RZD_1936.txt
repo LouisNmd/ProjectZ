@@ -1,0 +1,6 @@
+division_template = {
+	name = "Rising Dead Host"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}

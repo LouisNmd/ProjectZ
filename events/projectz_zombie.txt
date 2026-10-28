@@ -1,0 +1,44 @@
+# projectz.1 -> projectz.9 - Rising Dead bootstrap
+
+add_namespace = projectz
+
+country_event = {
+	id = projectz.1
+	title = projectz.1.t
+	desc = projectz.1.d
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = projectz_contamination_done }
+			}
+			set_global_flag = projectz_contamination_done
+			random_state = {
+				limit = {
+					is_impassable = no
+					is_controlled_by = OWNER
+					NOT = { is_owned_by = RZD }
+					infrastructure > 0
+				}
+				save_global_event_target_as = projectz_outbreak_state
+				transfer_state_to = RZD
+			}
+			RZD = {
+				set_capital = {
+					state = event_target:projectz_outbreak_state
+					remember_old_capital = no
+				}
+			}
+			event_target:projectz_outbreak_state = {
+				add_core_of = RZD
+			}
+		}
+	}
+
+	option = {
+		name = projectz.1.a
+	}
+}

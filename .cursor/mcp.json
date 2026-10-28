@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "hoi4-modder": {
+      "type": "stdio",
+      "command": "C:\\Users\\louis\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+      "args": [
+        "-m",
+        "hoi4_mcp.server",
+        "--vanilla-db",
+        "C:\\Users\\louis\\.hoi4_mcp\\vanilla.db",
+        "--auto-detect-mod"
+      ]
+    }
+  }
+}

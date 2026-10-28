@@ -1,0 +1,9 @@
+﻿l_english:
+ RZD:0 "Rising Dead"
+ RZD_DEF:0 "the Rising Dead"
+ RZD_ADJ:0 "Rising Dead"
+ RZD_rising_dead_leader:0 "The First of the Fallen"
+ RZD_rising_dead_leader_desc:0 "No one remembers the name they carried before the rot took hold. The thing that speaks for the Rising Dead now only repeats orders that sound like hunger."
+ projectz.1.t:0 "Contamination Report"
+ projectz.1.d:0 "New disease outbreak in [projectz_outbreak_state.GetName]. Nothing to worry about, said local authorities."
+ projectz.1.a:0 "We need to watch this closely."
