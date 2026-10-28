@@ -8,7 +8,6 @@
  RZD_mindless_horde_desc:0 "The Rising Dead do not build, trade, research, or negotiate. They do not forge weapons, vehicles, ships, or aircraft. They spread across every border they touch, reject every peace offer, and fight until nothing they hold remains."
  projectz_zombie_horde:0 "Shambler Mass"
  projectz_zombie_horde_desc:0 "A single writhing column of roughly one hundred thousand bodies."
- Shambling Horde:0 "Shambling Horde"
  RZD_rising_dead_leader:0 "Patient Zero"
  RZD_rising_dead_leader_desc:0 "Once a citizen of [projectz_outbreak_state.GetName]..."
  projectz.1.t:0 "Riot Outbreak"

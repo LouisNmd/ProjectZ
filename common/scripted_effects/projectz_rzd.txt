@@ -9,24 +9,26 @@ projectz_rzd_spread_war_to_neighbors = {
 
 	every_neighbor_country = {
 		limit = {
-			NOT = { has_war_with = ROOT }
 			exists = yes
-			NOT = { tag = ROOT }
+			NOT = { tag = RZD }
+			NOT = { has_war_with = RZD }
 		}
 
-		ROOT = {
+		save_event_target_as = projectz_rzd_neighbor_target
+
+		RZD = {
 			if = {
 				limit = {
-					NOT = { has_wargoal_against = PREV }
+					NOT = { has_wargoal_against = event_target:projectz_rzd_neighbor_target }
 				}
 				create_wargoal = {
 					type = annex_everything
-					target = PREV
+					target = event_target:projectz_rzd_neighbor_target
 					expire = 0
 				}
 			}
 			declare_war_on = {
-				target = PREV
+				target = event_target:projectz_rzd_neighbor_target
 				type = annex_everything
 			}
 		}
@@ -43,35 +45,36 @@ projectz_rzd_enforce_isolation = {
 
 	every_other_country = {
 		limit = {
-			NOT = { tag = ROOT }
+			exists = yes
+			NOT = { tag = RZD }
 		}
 
 		diplomatic_relation = {
-			country = ROOT
+			country = RZD
 			relation = non_aggression_pact
 			active = no
 		}
 
 		diplomatic_relation = {
-			country = ROOT
+			country = RZD
 			relation = military_access
 			active = no
 		}
 
 		diplomatic_relation = {
-			country = ROOT
+			country = RZD
 			relation = guarantee
 			active = no
 		}
 
 		diplomatic_relation = {
-			country = ROOT
+			country = RZD
 			relation = docking_rights
 			active = no
 		}
 
 		diplomatic_relation = {
-			country = ROOT
+			country = RZD
 			relation = embargo
 			active = yes
 		}
