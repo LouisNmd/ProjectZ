@@ -1,0 +1,363 @@
+RZD_zombie_horde_army = {
+	allowed = {
+		original_tag = RZD
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mobile
+		value = -500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -500
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 400
+	}
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 200
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -500
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = mechanized
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = air_transport
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -500
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = infantry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = armor
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = mechanized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_air
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_tank
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = naval
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = air
+		value = -100
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = air_base
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = naval_base
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = fuel_silo
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = radar_station
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = rocket_site
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = rail_way
+		value = -500
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = supply_node
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = armor
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = artillery
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = air
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = naval
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = industry
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = electronics
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = nuclear
+		value = -500
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = rocketry
+		value = -500
+	}
+}

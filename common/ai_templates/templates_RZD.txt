@@ -1,0 +1,27 @@
+projectz_rzd_horde = {
+	available_for = {
+		RZD
+	}
+
+	role = infantry
+
+	upgrade_prio = {
+		factor = 20
+	}
+
+	projectz_horde_main = {
+		upgrade_prio = {
+			factor = 10
+		}
+
+		reinforce_prio = 1
+
+		target_template = {
+			support = {
+			}
+			regiments = {
+				projectz_zombie_horde = 1
+			}
+		}
+	}
+}

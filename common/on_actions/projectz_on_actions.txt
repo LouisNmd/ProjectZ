@@ -13,8 +13,17 @@ on_actions = {
 		}
 	}
 
+	on_weekly_RZD = {
+		effect = {
+			projectz_rzd_spread_war_to_neighbors = yes
+		}
+	}
+
 	on_monthly_RZD = {
 		effect = {
+			projectz_rzd_maintain_fanaticism = yes
+			projectz_rzd_enforce_isolation = yes
+
 			every_owned_state = {
 				limit = {
 					is_controlled_by = RZD

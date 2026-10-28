@@ -1,0 +1,89 @@
+RZD_refuse_peace_offers = {
+	allowed = {
+		original_tag = RZD
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		value = -1000
+		target = peace_proposals_limited
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		value = -1000
+		target = peace_proposals
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		value = -1000
+		target = peace_proposal
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		value = -1000
+		target = offer_peace
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		value = -1000
+		target = white_peace
+	}
+}
+
+RZD_refuse_peace_from_enemies = {
+	allowed = {
+		NOT = { original_tag = RZD }
+	}
+	enable = {
+		has_war_with = RZD
+	}
+	enable_reverse = {
+		original_tag = RZD
+	}
+	reversed = yes
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = antagonize
+		id = RZD
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = RZD
+		value = -1000
+		target = peace_proposals_limited
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = RZD
+		value = -1000
+		target = peace_proposals
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = RZD
+		value = -1000
+		target = peace_proposal
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = RZD
+		value = -1000
+		target = offer_peace
+	}
+}

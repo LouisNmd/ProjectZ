@@ -2,6 +2,28 @@ capital = 1
 
 set_oob = "RZD_1936"
 
+set_research_slots = 0
+
+add_ideas = RZD_mindless_horde
+
+set_rule = {
+	can_access_market = no
+	can_be_spymaster = no
+	can_boost_other_ideologies = no
+	can_boost_own_ideology = no
+	can_create_collaboration_government = no
+	can_create_factions = no
+	can_force_government = no
+	can_generate_female_aces = no
+	can_guarantee_other_ideologies = no
+	can_join_factions = no
+	can_join_opposite_factions = no
+	can_not_build_buildings = yes
+	can_puppet = no
+	can_send_volunteers = no
+	can_declare_war_on_same_ideology = yes
+}
+
 recruit_character = RZD_rising_dead_leader
 
 set_politics = {
@@ -19,4 +41,4 @@ set_popularities = {
 }
 
 set_stability = 0.5
-set_war_support = 0.5
+set_war_support = 1

@@ -1,6 +1,8 @@
 division_template = {
-	name = "Rising Dead Host"
+	name = "Shambling Horde"
+	priority = 1
+	division_names_group = INF_OOBO_01
 	regiments = {
-		infantry = { x = 0 y = 0 }
+		projectz_zombie_horde = { x = 0 y = 0 }
 	}
 }

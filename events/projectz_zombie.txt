@@ -31,6 +31,8 @@ country_event = {
 					state = event_target:projectz_outbreak_state
 					remember_old_capital = no
 				}
+				projectz_rzd_enforce_isolation = yes
+				projectz_rzd_spread_war_to_neighbors = yes
 			}
 			event_target:projectz_outbreak_state = {
 				add_core_of = RZD

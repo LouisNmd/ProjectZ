@@ -1,0 +1,79 @@
+projectz_rzd_maintain_fanaticism = {
+	set_war_support = 1
+}
+
+projectz_rzd_spread_war_to_neighbors = {
+	limit = {
+		num_of_controlled_states > 0
+	}
+
+	every_neighbor_country = {
+		limit = {
+			NOT = { has_war_with = ROOT }
+			exists = yes
+			NOT = { tag = ROOT }
+		}
+
+		ROOT = {
+			if = {
+				limit = {
+					NOT = { has_wargoal_against = PREV }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+					expire = 0
+				}
+			}
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}
+
+projectz_rzd_enforce_isolation = {
+	if = {
+		limit = {
+			is_in_faction = yes
+		}
+		leave_faction = yes
+	}
+
+	every_other_country = {
+		limit = {
+			NOT = { tag = ROOT }
+		}
+
+		diplomatic_relation = {
+			country = ROOT
+			relation = non_aggression_pact
+			active = no
+		}
+
+		diplomatic_relation = {
+			country = ROOT
+			relation = military_access
+			active = no
+		}
+
+		diplomatic_relation = {
+			country = ROOT
+			relation = guarantee
+			active = no
+		}
+
+		diplomatic_relation = {
+			country = ROOT
+			relation = docking_rights
+			active = no
+		}
+
+		diplomatic_relation = {
+			country = ROOT
+			relation = embargo
+			active = yes
+		}
+	}
+}

@@ -1,0 +1,133 @@
+ideas = {
+	country = {
+		RZD_mindless_horde = {
+			picture = generic_purge
+
+			allowed = {
+				original_tag = RZD
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 5
+				forced_surrender_limit = 1
+				war_support_factor = 0.5
+				research_speed_factor = -5
+				production_speed_buildings_factor = -5
+				production_speed_industrial_complex_factor = -5
+				production_speed_arms_factory_factor = -5
+				production_speed_dockyard_factor = -5
+				production_speed_air_base_factor = -5
+				production_speed_naval_base_factor = -5
+				production_speed_anti_air_building_factor = -5
+				production_speed_radar_station_factor = -5
+				production_speed_rocket_site_factor = -5
+				production_speed_nuclear_reactor_factor = -5
+				production_speed_synthetic_refinery_factor = -5
+				production_speed_fuel_silo_factor = -5
+				production_speed_rail_way_factor = -5
+				production_speed_supply_node_factor = -5
+				production_speed_bunker_factor = -5
+				production_speed_coastal_bunker_factor = -5
+				industrial_capacity_factory = -5
+				industrial_capacity_dockyard = -5
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				train_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				convoy = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				fighter_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				transport_plane_equipment = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				destroyer = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				battleship = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				battle_cruiser = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = 99999
+					instant = yes
+				}
+			}
+		}
+	}
+}
