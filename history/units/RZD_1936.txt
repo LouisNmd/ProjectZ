@@ -1,7 +1,6 @@
 division_template = {
 	name = "Shambling Horde"
 	priority = 1
-	division_names_group = INF_OOBO_01
 	regiments = {
 		projectz_zombie_horde = { x = 0 y = 0 }
 	}

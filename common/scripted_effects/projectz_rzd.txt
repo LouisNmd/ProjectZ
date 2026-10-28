@@ -2,6 +2,33 @@ projectz_rzd_maintain_fanaticism = {
 	set_war_support = 1
 }
 
+projectz_rzd_ensure_horde_template = {
+	RZD = {
+		if = {
+			limit = {
+				NOT = { has_template = "Shambling Horde" }
+			}
+			division_template = {
+				name = "Shambling Horde"
+				priority = 1
+				regiments = {
+					projectz_zombie_horde = { x = 0 y = 0 }
+				}
+			}
+		}
+	}
+}
+
+projectz_rzd_spawn_starting_hordes = {
+	event_target:projectz_outbreak_state = {
+		create_unit = {
+			division = "division_template = \"Shambling Horde\" start_experience_factor = 0.3 start_equipment_factor = 1 start_manpower_factor = 1"
+			owner = RZD
+			count = 5
+		}
+	}
+}
+
 projectz_rzd_spread_war_to_neighbors = {
 	limit = {
 		num_of_controlled_states > 0

@@ -3,22 +3,20 @@ projectz_rzd_horde = {
 		RZD
 	}
 
-	role = infantry
+	role = projectz_horde
 
 	upgrade_prio = {
-		factor = 20
+		base = 50
 	}
 
 	projectz_horde_main = {
 		upgrade_prio = {
-			factor = 10
+			base = 50
 		}
 
-		reinforce_prio = 1
+		reinforce_prio = 2
 
 		target_template = {
-			support = {
-			}
 			regiments = {
 				projectz_zombie_horde = 1
 			}

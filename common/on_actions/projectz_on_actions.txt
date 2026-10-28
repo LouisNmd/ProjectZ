@@ -15,6 +15,7 @@ on_actions = {
 
 	on_weekly_RZD = {
 		effect = {
+			projectz_rzd_ensure_horde_template = yes
 			projectz_rzd_spread_war_to_neighbors = yes
 		}
 	}

@@ -31,12 +31,15 @@ country_event = {
 					state = event_target:projectz_outbreak_state
 					remember_old_capital = no
 				}
+				projectz_rzd_ensure_horde_template = yes
 				projectz_rzd_enforce_isolation = yes
 				projectz_rzd_spread_war_to_neighbors = yes
 			}
+			projectz_rzd_spawn_starting_hordes = yes
 			event_target:projectz_outbreak_state = {
 				add_core_of = RZD
 				projectz_initialize_zombie_outbreak_state = yes
+				projectz_monthly_zombie_outbreak_tick = yes
 			}
 		}
 	}
