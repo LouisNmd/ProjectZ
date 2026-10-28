@@ -12,4 +12,37 @@ on_actions = {
 			}
 		}
 	}
+
+	on_monthly_RZD = {
+		effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = RZD
+				}
+				if = {
+					limit = {
+						NOT = { has_state_flag = projectz_outbreak_initialized }
+					}
+					projectz_initialize_zombie_outbreak_state = yes
+				}
+				projectz_monthly_zombie_outbreak_tick = yes
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = RZD
+					FROM = {
+						NOT = { tag = RZD }
+					}
+				}
+				FROM.FROM = {
+					projectz_initialize_zombie_outbreak_state = yes
+				}
+			}
+		}
+	}
 }

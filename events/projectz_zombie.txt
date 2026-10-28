@@ -34,6 +34,7 @@ country_event = {
 			}
 			event_target:projectz_outbreak_state = {
 				add_core_of = RZD
+				projectz_initialize_zombie_outbreak_state = yes
 			}
 		}
 	}

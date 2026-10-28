@@ -1,0 +1,58 @@
+projectz_initialize_zombie_outbreak_state = {
+	if = {
+		limit = {
+			NOT = { has_state_flag = projectz_outbreak_initialized }
+		}
+		set_state_flag = projectz_outbreak_initialized
+
+		set_variable = { projectz_outbreak_civilian_ratio = 1 }
+		set_variable = { projectz_outbreak_resistance_target = 0.8 }
+
+		add_dynamic_modifier = { modifier = projectz_zombie_outbreak }
+
+		force_enable_resistance = RZD
+		start_resistance = yes
+		set_compliance = 0
+		set_resistance = 60
+	}
+}
+
+projectz_monthly_zombie_outbreak_tick = {
+	limit = {
+		has_dynamic_modifier = { modifier = projectz_zombie_outbreak }
+	}
+
+	if = {
+		limit = {
+			check_variable = { projectz_outbreak_civilian_ratio > 0.01 }
+		}
+
+		set_variable = { projectz_pop_decline = state_population }
+		multiply_variable = { projectz_pop_decline = 0.08 }
+
+		if = {
+			limit = {
+				check_variable = { projectz_pop_decline > 500 }
+			}
+			multiply_variable = { projectz_pop_decline = -1 }
+			add_manpower = var:projectz_pop_decline
+		}
+
+		add_to_variable = { projectz_outbreak_civilian_ratio = -0.08 }
+		clamp_variable = {
+			var = projectz_outbreak_civilian_ratio
+			min = 0
+			max = 1
+		}
+
+		set_variable = { projectz_outbreak_resistance_target = projectz_outbreak_civilian_ratio }
+		multiply_variable = { projectz_outbreak_resistance_target = 0.8 }
+
+		force_update_dynamic_modifier = yes
+	}
+	else = {
+		set_variable = { projectz_outbreak_resistance_target = 0 }
+		set_resistance = 0
+		remove_dynamic_modifier = { modifier = projectz_zombie_outbreak }
+	}
+}

@@ -1,0 +1,17 @@
+projectz_zombie_outbreak = {
+	icon = GFX_idea_generic_purge
+	enable = {
+		is_owned_by = RZD
+		is_controlled_by = RZD
+	}
+
+	remove_trigger = {
+		OR = {
+			NOT = { is_owned_by = RZD }
+			NOT = { is_controlled_by = RZD }
+		}
+	}
+
+	resistance_target = projectz_outbreak_resistance_target
+	resistance_growth = 0.15
+}
